@@ -1,0 +1,21 @@
+{
+  "name": "shioru-api",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "bun test",
+    "dev": "bun run --watch source/index.ts",
+    "start": "bun run source/index.ts",
+    "start:cluster": "bun run source/cluster.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/cors": "^1.4.1",
+    "@elysiajs/jwt": "^1.4.1",
+    "elysia": "latest",
+    "firebase-admin": "^13.7.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "source/index.js"
+}
