@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { createApp } from "../source/app";
+import { createApp } from "../src/server";
 
 const app = createApp();
 
