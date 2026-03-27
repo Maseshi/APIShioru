@@ -33,7 +33,7 @@ export const authRoutes = new Elysia({ prefix: "/auth" })
         avatar: user.avatar,
         globalName: user.global_name,
         accessToken: access_token,
-      });
+      } as Record<string, string>);
 
       token.set({
         value: jwtToken,
