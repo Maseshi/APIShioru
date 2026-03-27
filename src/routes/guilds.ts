@@ -110,7 +110,7 @@ export const guildRoutes = new Elysia({ prefix: "/api/guilds" })
       if (!userId) return { error: "Forbidden" };
 
       await db.ref(`guilds/${params.guildId}/djs`).update({
-        ...body,
+        ...(body as object),
         editedAt: new Date().toISOString(),
       });
       return { success: true };
